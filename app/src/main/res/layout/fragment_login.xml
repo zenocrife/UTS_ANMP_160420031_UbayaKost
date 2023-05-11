@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.LoginFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F6F1F1">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="135dp"
+            android:layout_height="101dp"
+            android:layout_marginTop="140dp"
+            android:layout_marginEnd="44dp"
+            android:text="Ubaya Kost"
+            android:textSize="38sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imgUbayaKost"
+            android:layout_width="143dp"
+            android:layout_height="126dp"
+            android:layout_marginTop="128dp"
+            android:layout_marginEnd="1dp"
+            android:src="@drawable/ic_baseline_hotel_24"
+            app:layout_constraintEnd_toStartOf="@+id/textView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtInputlayout"
+            android:layout_width="343dp"
+            android:layout_height="85dp"
+            android:layout_marginTop="40dp"
+            app:boxBackgroundColor="#FFFDFD"
+            app:boxCornerRadiusBottomEnd="10dp"
+            app:boxCornerRadiusBottomStart="10dp"
+            app:boxCornerRadiusTopEnd="10dp"
+            app:boxCornerRadiusTopStart="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/textView"
+            app:layout_constraintStart_toStartOf="@+id/imgUbayaKost"
+            app:layout_constraintTop_toBottomOf="@+id/imgUbayaKost">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtID"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="User ID"
+                android:shadowDx="10" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout"
+            android:layout_width="342dp"
+            android:layout_height="81dp"
+            android:layout_marginTop="40dp"
+            app:boxBackgroundColor="#FBF9F9"
+            app:boxCornerRadiusBottomEnd="10dp"
+            app:boxCornerRadiusBottomStart="10dp"
+            app:boxCornerRadiusTopEnd="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/txtInputlayout"
+            app:layout_constraintStart_toStartOf="@+id/txtInputlayout"
+            app:layout_constraintTop_toBottomOf="@+id/txtInputlayout">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtPassword"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Password" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="88dp"
+            android:text="LOGIN"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

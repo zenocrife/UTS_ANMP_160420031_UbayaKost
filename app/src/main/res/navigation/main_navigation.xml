@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/itemHome">
+    <fragment
+        android:id="@+id/detailKostFragment"
+        android:name="com.example.a160420031_uts_anmp.view.DetailKostFragment"
+        android:label="fragment_detail_kost"
+        tools:layout="@layout/fragment_detail_kost" >
+        <action
+            android:id="@+id/actionMapFragment"
+            app:destination="@id/mapFragment" />
+        <argument
+            android:name="kost_id"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.a160420031_uts_anmp.view.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/actionLoginFragment"
+            app:destination="@id/itemHome" />
+    </fragment>
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.example.a160420031_uts_anmp.view.MapFragment"
+        android:label="fragment_map"
+        tools:layout="@layout/fragment_map" />
+    <fragment
+        android:id="@+id/itemUserProfile"
+        android:name="com.example.a160420031_uts_anmp.view.UserProfileFragment"
+        android:label="fragment_user_profile"
+        tools:layout="@layout/fragment_user_profile" />
+    <fragment
+        android:id="@+id/itemFavorite"
+        android:name="com.example.a160420031_uts_anmp.view.FavoriteKostFragment"
+        android:label="fragment_favorite_list"
+        tools:layout="@layout/fragment_favorite_list" >
+        <action
+            android:id="@+id/actionFavoriteKostFragment"
+            app:destination="@id/detailKostFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/itemHome"
+        android:name="com.example.a160420031_uts_anmp.view.KostListFragment"
+        android:label="Kost"
+        tools:layout="@layout/fragment_kost_list">
+        <action
+            android:id="@+id/actionKostDetail"
+            app:destination="@id/detailKostFragment" />
+    </fragment>
+</navigation>
