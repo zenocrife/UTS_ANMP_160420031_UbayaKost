@@ -13,6 +13,7 @@ import com.example.a160420031_uts_anmp.R
 import com.example.a160420031_uts_anmp.model.Kost
 import com.example.a160420031_uts_anmp.util.loadImage
 import com.example.a160420031_uts_anmp.view.FavoriteKostFragmentDirections
+import com.example.a160420031_uts_anmp.view.RegionKostFragment
 import com.example.a160420031_uts_anmp.view.RegionKostFragmentDirections
 
 class RegionKostAdapter(val regionKostList:ArrayList<Kost>)

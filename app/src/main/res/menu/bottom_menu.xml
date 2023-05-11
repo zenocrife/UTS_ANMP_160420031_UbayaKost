@@ -7,6 +7,11 @@
         android:icon="@drawable/ic_baseline_home_24"
         android:title="Home" />
     <item
+        android:id="@+id/itemRegion"
+        android:icon="@drawable/ic_baseline_location_on_24"
+        android:title="Region"
+        app:showAsAction="always" />
+    <item
         android:id="@+id/itemFavorite"
         android:icon="@drawable/ic_baseline_favorite_border_24"
         android:title="Favorite" />

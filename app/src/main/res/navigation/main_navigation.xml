@@ -53,4 +53,13 @@
             android:id="@+id/actionKostDetail"
             app:destination="@id/detailKostFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/itemRegion"
+        android:name="com.example.a160420031_uts_anmp.view.RegionKostFragment"
+        android:label="fragment_region_kost"
+        tools:layout="@layout/fragment_region_kost" >
+        <action
+            android:id="@+id/actionRegionKostFragment"
+            app:destination="@id/detailKostFragment" />
+    </fragment>
 </navigation>
