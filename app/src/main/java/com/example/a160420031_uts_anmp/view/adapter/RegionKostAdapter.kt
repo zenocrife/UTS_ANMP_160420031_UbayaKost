@@ -35,7 +35,7 @@ class RegionKostAdapter(val regionKostList:ArrayList<Kost>)
         var progressBar = holder.view.findViewById<ProgressBar>(R.id.progressBarKostAdapter)
 
         kostnama.text = regionKostList[position].name
-        rating.text = regionKostList[position].rating
+        rating.text = "Rating :"+regionKostList[position].rating
         kostPrice.text = "Rp "+ regionKostList[position].price.toString() +" /bulan"
         imageKost.loadImage(regionKostList[position].photoURL, progressBar)
 

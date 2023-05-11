@@ -31,7 +31,7 @@ class KostListAdapter(val kostListArr:ArrayList<Kost>)
 
         kostItemNama.text = kostListArr[position].name
         ratingKostItem.text = "Rating : "+kostListArr[position].rating
-        priceItem.text = "Rp. "+ kostListArr[position].price.toString()+" /Tahun"
+        priceItem.text = "Rp. "+ kostListArr[position].price.toString()+" /bulan"
         imgKostItem.loadImage(kostListArr[position].photoURL, progressBar)
 
         val btnDetail = holder.view.findViewById<Button>(R.id.btnDetails)
